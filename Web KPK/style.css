@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e1ff;
+    color: #4b0082;
+    text-align: center;
+}
+header {
+    background-color: #6a0dad;
+    padding: 20px;
+    color: white;
+}
+main {
+    padding: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #d8b3ff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#photo-container {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#member-photo {
+    display: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    border: 3px solid #6a0dad;
+}
