@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPK WEBSITE</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="navbar.css" type="text/css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="container">
+     
+            <a href="https://www.malasngoding.com" class="logo">KPK</a>
+            
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Kontak Kami</a></li>
+            </ul>
+     
+     
+            <div class="tombol">
+                &#9776;
+            </div>
+     
+        </div>
+    </nav>
+     
+     
+        <script type="text/javascript">
+            // deklarasi tombol dan menu
+            const tombol = document.querySelector('.tombol');
+            const menu = document.querySelector('.menu');
+     
+            // membuat event click
+            // pada saat tombol di click, tambahkan class aktif pada class menu
+            // saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+            tombol.addEventListener('click', () => {
+                menu.classList.toggle('aktif');
+            });
+        </script>
+
+
+    <header>
+        <h1>Selamat Datang di Website KPK [KOMUNITAS PECINTA KUCING]</h1>
+    </header>
+    <main>
+        <section id="tentang">
+            <img id="gik" src="kpk.gif" alt="">
+            <h2>Tentang Komunitas</h2>
+            <p>Komunitas ini berdiri pada tahun <strong>26 September 2024</strong>.</p>
+            <p>Didirikan oleh: <strong>Ahmad, Alam, Kevin, Baim</strong>.</p>
+            <p>Alasan terbentuknya komunitas ini adalah untuk <em>membangun sebuah komunitas pertemanan</em>.</p>
+        </section>
+        <section id="member">
+            <h2>Daftar Member</h2>
+            <div id="photo-container">
+                <img id="member-photo" src="" alt="Foto Member">
+            </div>
+            <button id="detail-button" style="display:none; margin-top: 10px;" onclick="goToDetails()">INFO MEMBER</button>
+            <ul id="member-list"></ul>
+            <footer>Terimakasih Kepada Website <a href="https://www.malasngoding.com">malasngoding.com</a> Untuk Tutorialnya</footer>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

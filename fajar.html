@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri Member</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Info Diri Member</h1>
+        <div class="profile">
+            <img id="profile-photo" src="kpklogo.gif" alt="Foto Member">
+            <h2 id="member-name">Fajar</h2>
+            <p><strong>Usia:</strong> <span id="member-age">HANYA</span> ALLLAH YANG TAU</p>
+            <p><strong>Hobi:</strong> <span id="member-hobby">Pengen Punya Hobi</span></p>
+            <p><strong>Quote :</strong></p>
+            <p id="member-description">-</p>
+            <p><strong>Lagu :</strong></p>
+            <video width="50%" height="50%" controls>
+<source src="lam1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <button onclick="goBack()">Kembali</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
